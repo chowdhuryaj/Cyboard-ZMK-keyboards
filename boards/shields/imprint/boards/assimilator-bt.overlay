@@ -57,7 +57,7 @@
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <150>; /* arbitrary; change at will */
+        chain-length = <70>; /* real Imprint LED count (AJ, 2026-07-08) — was 150 "arbitrary" */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
