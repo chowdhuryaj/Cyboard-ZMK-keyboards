@@ -6,7 +6,10 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &imprint_function_row;
+        /* No default matrix-transform chosen: ZMK Studio's physical-layout
+         * path requires that no zmk,matrix_transform is chosen anywhere
+         * (physical_layouts.c USE_PHY_LAYOUTS). Keymaps on this branch pick
+         * a zmk,physical-layout (which carries its transform) instead. */
     };
 
     /* Generated from Cyboard-ZMK config/info.json (70 keys) for ZMK Studio.
